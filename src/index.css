@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+/* Design tokens basés sur votre maquette Figma mobile */
+:root {
+  --color-primary-500: #3b82f6;
+  --color-primary-600: #2563eb;
+  --color-primary-700: #1d4ed8;
+  --spacing-mobile: 1rem;
+  --touch-target: 44px;
+  --safe-area-top: env(safe-area-inset-top, 0);
+  --safe-area-bottom: env(safe-area-inset-bottom, 0);
+}
+
+@layer components {
+  .mobile-header {
+    @apply bg-white shadow-sm sticky top-0 z-50;
+    padding-top: var(--safe-area-top);
+  }
+  
+  .hamburger-menu {
+    @apply fixed inset-0 bg-white z-50 transform translate-x-full;
+    @apply transition-transform duration-300 ease-in-out;
+    padding-top: var(--safe-area-top);
+  }
+  
+  .mobile-card {
+    @apply bg-white rounded-xl shadow-sm p-4 min-h-[120px];
+    @apply hover:shadow-md transition-shadow duration-300;
+    touch-action: manipulation;
+  }
+  
+  .touch-button {
+    min-height: var(--touch-target);
+    min-width: var(--touch-target);
+    @apply flex items-center justify-center rounded-lg;
+    @apply active:scale-95 transition-transform duration-150;
+  }
+}
+
+@layer utilities {
+  .safe-top {
+    padding-top: var(--safe-area-top);
+  }
+  
+  .safe-bottom {
+    padding-bottom: var(--safe-area-bottom);
+  }
+  
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
