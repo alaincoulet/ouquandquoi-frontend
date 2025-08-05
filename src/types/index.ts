@@ -37,7 +37,6 @@ export interface InputProps {
   className?: string
 }
 
-
 export interface IconProps {
   name: 'search' | 'location' | 'calendar' | 'filter' | 'star' | 'heart' | 'arrow' | 'close' | 'menu'
   size?: 'sm' | 'md' | 'lg' | 'xl'
@@ -46,36 +45,19 @@ export interface IconProps {
   ariaLabel: string
 }
 
-export interface InputProps {
-  label?: string
-  type?: string
-  placeholder?: string
-  value?: string
-  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void
-  error?: string
-  required?: boolean
-  disabled?: boolean
-  fullWidth?: boolean
-  size?: 'sm' | 'md' | 'lg'
-  icon?: React.ReactNode
-  id?: string
-  name?: string
-  ariaDescribedBy?: string
-  className?: string
-}
-
 /**
  * Types pour les données métier d'oùquandquoi.fr
  */
 export interface Activity {
-  id: number
-  title: string
-  description: string
-  location: string
-  price: number
-  image: string
-  category: string
-  isFavorite: boolean
+  id: string                    // id généré côté backend (string, pour compatibilité JSON)
+  title: string                 // titre de l'activité
+  description: string           // description de l'activité
+  location: string              // lieu (ville, code postal)
+  user: string                  // nom de l'utilisateur (souvent 'Alain')
+  image: string                 // chemin image côté backend (ex: /images/xxx.png)
+  createdAt: string             // date ISO de création
+  category?: string             // 🆕 catégorie principale
+  subcategory?: string          // 🆕 sous-catégorie (optionnelle)
 }
 
 /**
@@ -92,7 +74,7 @@ export interface MobileMenuProps {
 
 export interface ProductCardProps {
   product: Activity
-  onToggleFavorite: (id: number, isFavorite: boolean) => void
+  onToggleFavorite: (id: string, isFavorite: boolean) => void
 }
 
 export interface SearchBoxProps {

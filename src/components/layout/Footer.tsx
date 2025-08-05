@@ -99,8 +99,8 @@ const Footer = () => {
             <a href="/mentions-legales" className="hover:text-gray-700 transition-colors">
               Mentions légales
             </a>
-            <a href="/politique-confidentialite" className="hover:text-gray-700 transition-colors">
-              Confidentialité
+            <a href="/confidentialite" className="hover:text-gray-700 transition-colors">
+            Politique de confidentialité
             </a>
             <a href="/cgu" className="hover:text-gray-700 transition-colors">
               CGU

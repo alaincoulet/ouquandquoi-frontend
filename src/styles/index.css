@@ -8,6 +8,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 /* ========================================
+   IMPORTS LIBRAIRIES CSS
+   ======================================== */
+
+/* Keen Slider pour les carrousels */
+@import 'keen-slider/keen-slider.min.css';
+
+/* ========================================
    IMPORTS TAILWINDCSS - BASE DU DESIGN SYSTEM
    ======================================== */
 
@@ -168,7 +175,20 @@
 @layer components {
   /* Style de base pour les conteneurs principaux */
   .container-custom {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+    @apply max-w-7xl mx-auto px-4;
+    /* Responsive à la main car @apply ne prend pas sm: ou lg: */
+  }
+  @media (min-width: 640px) {
+    .container-custom {
+      padding-left: 1.5rem; /* sm:px-6 */
+      padding-right: 1.5rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    .container-custom {
+      padding-left: 2rem; /* lg:px-8 */
+      padding-right: 2rem;
+    }
   }
 
   /* Styles pour les cartes d'activité avec variables CSS */
@@ -559,4 +579,16 @@
     -webkit-font-smoothing: subpixel-antialiased;
     -moz-osx-font-smoothing: auto;
   }
+}
+
+/* ========================================
+   MASQUAGE SCROLLBAR HORIZONTALE POUR CAROUSEL
+   ======================================== */
+
+/* Masque la scrollbar horizontale des carrousels (cross-browser) */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  scrollbar-width: none;
 }

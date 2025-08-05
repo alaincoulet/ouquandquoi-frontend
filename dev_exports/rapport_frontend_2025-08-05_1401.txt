@@ -1,0 +1,714 @@
+=== RAPPORT COMPLET PROJET oùquandquoi.fr ===
+Généré le : Tue, Aug  5, 2025  2:01:05 PM
+
+----- DERNIER COMMIT GIT -----
+f262eaa | alain | 2025-07-26 22:05:26 +0200 | Initialisation du projet frontend avec Vite + TailwindCSS V3 au lieu de V4
+----- FICHIERS MARKDOWN (.md) DANS LE PROJET -----
+./journal.md
+./node_modules/@alloc/quick-lru/readme.md
+./node_modules/@ampproject/remapping/README.md
+./node_modules/@babel/code-frame/README.md
+./node_modules/@babel/compat-data/README.md
+./node_modules/@babel/core/README.md
+./node_modules/@babel/generator/README.md
+./node_modules/@babel/helper-compilation-targets/README.md
+./node_modules/@babel/helper-globals/README.md
+./node_modules/@babel/helper-module-imports/README.md
+./node_modules/@babel/helper-module-transforms/README.md
+./node_modules/@babel/helper-plugin-utils/README.md
+./node_modules/@babel/helpers/README.md
+./node_modules/@babel/helper-string-parser/README.md
+./node_modules/@babel/helper-validator-identifier/README.md
+./node_modules/@babel/helper-validator-option/README.md
+./node_modules/@babel/parser/CHANGELOG.md
+./node_modules/@babel/parser/README.md
+./node_modules/@babel/plugin-transform-react-jsx-self/README.md
+./node_modules/@babel/plugin-transform-react-jsx-source/README.md
+./node_modules/@babel/template/README.md
+./node_modules/@babel/traverse/README.md
+./node_modules/@babel/types/README.md
+./node_modules/@date-fns/tz/CHANGELOG.md
+./node_modules/@date-fns/tz/LICENSE.md
+./node_modules/@date-fns/tz/README.md
+./node_modules/@esbuild/win32-x64/README.md
+./node_modules/@eslint/config-array/README.md
+./node_modules/@eslint/config-helpers/README.md
+./node_modules/@eslint/core/README.md
+./node_modules/@eslint/eslintrc/node_modules/globals/readme.md
+./node_modules/@eslint/eslintrc/README.md
+./node_modules/@eslint/js/README.md
+./node_modules/@eslint/object-schema/README.md
+./node_modules/@eslint/plugin-kit/README.md
+./node_modules/@eslint-community/eslint-utils/node_modules/eslint-visitor-keys/README.md
+./node_modules/@eslint-community/eslint-utils/README.md
+./node_modules/@eslint-community/regexpp/README.md
+./node_modules/@heroicons/react/README.md
+./node_modules/@humanfs/core/README.md
+./node_modules/@humanfs/node/node_modules/@humanwhocodes/retry/README.md
+./node_modules/@humanfs/node/README.md
+./node_modules/@humanwhocodes/module-importer/CHANGELOG.md
+./node_modules/@humanwhocodes/module-importer/README.md
+./node_modules/@humanwhocodes/retry/README.md
+./node_modules/@isaacs/cliui/README.md
+./node_modules/@jridgewell/gen-mapping/README.md
+./node_modules/@jridgewell/resolve-uri/README.md
+./node_modules/@jridgewell/sourcemap-codec/README.md
+./node_modules/@jridgewell/trace-mapping/README.md
+./node_modules/@nodelib/fs.scandir/README.md
+./node_modules/@nodelib/fs.stat/README.md
+./node_modules/@nodelib/fs.walk/README.md
+./node_modules/@pkgjs/parseargs/CHANGELOG.md
+./node_modules/@pkgjs/parseargs/README.md
+./node_modules/@rollup/rollup-win32-x64-msvc/README.md
+./node_modules/@types/babel__core/README.md
+./node_modules/@types/babel__generator/README.md
+./node_modules/@types/babel__template/README.md
+./node_modules/@types/babel__traverse/README.md
+./node_modules/@types/estree/README.md
+./node_modules/@types/json-schema/README.md
+./node_modules/@types/react/README.md
+./node_modules/@types/react-dom/README.md
+./node_modules/@vitejs/plugin-react/README.md
+./node_modules/acorn/CHANGELOG.md
+./node_modules/acorn/README.md
+./node_modules/acorn-jsx/README.md
+./node_modules/ajv/lib/dotjs/README.md
+./node_modules/ajv/README.md
+./node_modules/ansi-regex/readme.md
+./node_modules/ansi-styles/readme.md
+./node_modules/anymatch/node_modules/picomatch/CHANGELOG.md
+./node_modules/anymatch/node_modules/picomatch/README.md
+./node_modules/anymatch/README.md
+./node_modules/any-promise/README.md
+./node_modules/arg/LICENSE.md
+./node_modules/arg/README.md
+./node_modules/argparse/CHANGELOG.md
+./node_modules/argparse/README.md
+./node_modules/asynckit/README.md
+./node_modules/autoprefixer/README.md
+./node_modules/axios/CHANGELOG.md
+./node_modules/axios/lib/adapters/README.md
+./node_modules/axios/lib/core/README.md
+./node_modules/axios/lib/env/README.md
+./node_modules/axios/lib/helpers/README.md
+./node_modules/axios/MIGRATION_GUIDE.md
+./node_modules/axios/README.md
+./node_modules/balanced-match/LICENSE.md
+./node_modules/balanced-match/README.md
+./node_modules/binary-extensions/readme.md
+./node_modules/brace-expansion/README.md
+./node_modules/braces/README.md
+./node_modules/browserslist/README.md
+./node_modules/call-bind-apply-helpers/CHANGELOG.md
+./node_modules/call-bind-apply-helpers/README.md
+./node_modules/callsites/readme.md
+./node_modules/camelcase-css/README.md
+./node_modules/caniuse-lite/README.md
+./node_modules/chalk/readme.md
+./node_modules/chokidar/node_modules/glob-parent/CHANGELOG.md
+./node_modules/chokidar/node_modules/glob-parent/README.md
+./node_modules/chokidar/README.md
+./node_modules/color-convert/CHANGELOG.md
+./node_modules/color-convert/README.md
+./node_modules/color-name/README.md
+./node_modules/combined-stream/Readme.md
+./node_modules/commander/CHANGELOG.md
+./node_modules/commander/Readme.md
+./node_modules/convert-source-map/README.md
+./node_modules/cookie/README.md
+./node_modules/cross-spawn/README.md
+./node_modules/cssesc/README.md
+./node_modules/csstype/README.md
+./node_modules/date-fns/CHANGELOG.md
+./node_modules/date-fns/docs/cdn.md
+./node_modules/date-fns/docs/fp.md
+./node_modules/date-fns/docs/gettingStarted.md
+./node_modules/date-fns/docs/i18n.md
+./node_modules/date-fns/docs/i18nContributionGuide.md
+./node_modules/date-fns/docs/release.md
+./node_modules/date-fns/docs/timeZones.md
+./node_modules/date-fns/docs/unicodeTokens.md
+./node_modules/date-fns/docs/webpack.md
+./node_modules/date-fns/LICENSE.md
+./node_modules/date-fns/README.md
+./node_modules/date-fns/SECURITY.md
+./node_modules/date-fns-jalali/CHANGELOG.md
+./node_modules/date-fns-jalali/docs/cdn.md
+./node_modules/date-fns-jalali/docs/fp.md
+./node_modules/date-fns-jalali/docs/gettingStarted.md
+./node_modules/date-fns-jalali/docs/i18n.md
+./node_modules/date-fns-jalali/docs/i18nContributionGuide.md
+./node_modules/date-fns-jalali/docs/release.md
+./node_modules/date-fns-jalali/docs/timeZones.md
+./node_modules/date-fns-jalali/docs/unicodeTokens.md
+./node_modules/date-fns-jalali/docs/webpack.md
+./node_modules/date-fns-jalali/LICENSE.md
+./node_modules/date-fns-jalali/README.md
+./node_modules/date-fns-jalali/SECURITY.md
+./node_modules/debug/README.md
+./node_modules/delayed-stream/Readme.md
+./node_modules/didyoumean/README.md
+./node_modules/dlv/README.md
+./node_modules/dunder-proto/CHANGELOG.md
+./node_modules/dunder-proto/README.md
+./node_modules/eastasianwidth/README.md
+./node_modules/electron-to-chromium/README.md
+./node_modules/emoji-regex/README.md
+./node_modules/esbuild/LICENSE.md
+./node_modules/esbuild/README.md
+./node_modules/escalade/readme.md
+./node_modules/escape-string-regexp/readme.md
+./node_modules/es-define-property/CHANGELOG.md
+./node_modules/es-define-property/README.md
+./node_modules/es-errors/CHANGELOG.md
+./node_modules/es-errors/README.md
+./node_modules/eslint/README.md
+./node_modules/eslint-plugin-react-hooks/README.md
+./node_modules/eslint-plugin-react-refresh/README.md
+./node_modules/eslint-scope/README.md
+./node_modules/eslint-visitor-keys/README.md
+./node_modules/es-object-atoms/CHANGELOG.md
+./node_modules/es-object-atoms/README.md
+./node_modules/espree/README.md
+./node_modules/esquery/README.md
+./node_modules/esrecurse/README.md
+./node_modules/es-set-tostringtag/CHANGELOG.md
+./node_modules/es-set-tostringtag/README.md
+./node_modules/estraverse/README.md
+./node_modules/esutils/README.md
+./node_modules/fast-deep-equal/README.md
+./node_modules/fast-glob/node_modules/glob-parent/CHANGELOG.md
+./node_modules/fast-glob/node_modules/glob-parent/README.md
+./node_modules/fast-glob/README.md
+./node_modules/fast-json-stable-stringify/README.md
+./node_modules/fast-levenshtein/LICENSE.md
+./node_modules/fast-levenshtein/README.md
+./node_modules/fastq/README.md
+./node_modules/fastq/SECURITY.md
+./node_modules/fdir/README.md
+./node_modules/file-entry-cache/README.md
+./node_modules/fill-range/README.md
+./node_modules/find-up/readme.md
+./node_modules/flat-cache/changelog.md
+./node_modules/flat-cache/README.md
+./node_modules/flatted/README.md
+./node_modules/follow-redirects/README.md
+./node_modules/foreground-child/README.md
+./node_modules/form-data/CHANGELOG.md
+./node_modules/form-data/README.md
+./node_modules/fraction.js/README.md
+./node_modules/function-bind/.github/SECURITY.md
+./node_modules/function-bind/CHANGELOG.md
+./node_modules/function-bind/README.md
+./node_modules/gensync/README.md
+./node_modules/get-intrinsic/CHANGELOG.md
+./node_modules/get-intrinsic/README.md
+./node_modules/get-proto/CHANGELOG.md
+./node_modules/get-proto/README.md
+./node_modules/glob/node_modules/brace-expansion/README.md
+./node_modules/glob/node_modules/minimatch/README.md
+./node_modules/glob/README.md
+./node_modules/globals/readme.md
+./node_modules/glob-parent/README.md
+./node_modules/gopd/CHANGELOG.md
+./node_modules/gopd/README.md
+./node_modules/has-flag/readme.md
+./node_modules/hasown/CHANGELOG.md
+./node_modules/hasown/README.md
+./node_modules/has-symbols/CHANGELOG.md
+./node_modules/has-symbols/README.md
+./node_modules/has-tostringtag/CHANGELOG.md
+./node_modules/has-tostringtag/README.md
+./node_modules/ignore/README.md
+./node_modules/import-fresh/readme.md
+./node_modules/imurmurhash/README.md
+./node_modules/is-binary-path/readme.md
+./node_modules/is-core-module/CHANGELOG.md
+./node_modules/is-core-module/README.md
+./node_modules/isexe/README.md
+./node_modules/is-extglob/README.md
+./node_modules/is-fullwidth-code-point/readme.md
+./node_modules/is-glob/README.md
+./node_modules/is-number/README.md
+./node_modules/jackspeak/LICENSE.md
+./node_modules/jackspeak/README.md
+./node_modules/jiti/README.md
+./node_modules/jsesc/README.md
+./node_modules/json5/LICENSE.md
+./node_modules/json5/README.md
+./node_modules/json-buffer/README.md
+./node_modules/json-schema-traverse/README.md
+./node_modules/js-tokens/CHANGELOG.md
+./node_modules/js-tokens/README.md
+./node_modules/js-yaml/CHANGELOG.md
+./node_modules/js-yaml/README.md
+./node_modules/keen-slider/README.md
+./node_modules/keyv/README.md
+./node_modules/levn/README.md
+./node_modules/lilconfig/readme.md
+./node_modules/lines-and-columns/README.md
+./node_modules/locate-path/readme.md
+./node_modules/lodash.merge/README.md
+./node_modules/lru-cache/README.md
+./node_modules/math-intrinsics/CHANGELOG.md
+./node_modules/math-intrinsics/README.md
+./node_modules/merge2/README.md
+./node_modules/micromatch/node_modules/picomatch/CHANGELOG.md
+./node_modules/micromatch/node_modules/picomatch/README.md
+./node_modules/micromatch/README.md
+./node_modules/mime-db/HISTORY.md
+./node_modules/mime-db/README.md
+./node_modules/mime-types/HISTORY.md
+./node_modules/mime-types/README.md
+./node_modules/minimatch/README.md
+./node_modules/minipass/README.md
+./node_modules/ms/license.md
+./node_modules/ms/readme.md
+./node_modules/mz/HISTORY.md
+./node_modules/mz/README.md
+./node_modules/nanoid/README.md
+./node_modules/natural-compare/README.md
+./node_modules/node-releases/README.md
+./node_modules/normalize-path/README.md
+./node_modules/normalize-range/readme.md
+./node_modules/normalize-wheel/README.md
+./node_modules/object-assign/readme.md
+./node_modules/optionator/CHANGELOG.md
+./node_modules/optionator/README.md
+./node_modules/package-json-from-dist/LICENSE.md
+./node_modules/package-json-from-dist/README.md
+./node_modules/parent-module/readme.md
+./node_modules/path-exists/readme.md
+./node_modules/path-key/readme.md
+./node_modules/path-parse/README.md
+./node_modules/path-scurry/LICENSE.md
+./node_modules/path-scurry/node_modules/lru-cache/README.md
+./node_modules/path-scurry/README.md
+./node_modules/picocolors/README.md
+./node_modules/picomatch/README.md
+./node_modules/pify/readme.md
+./node_modules/pirates/README.md
+./node_modules/p-limit/readme.md
+./node_modules/p-locate/readme.md
+./node_modules/postcss/README.md
+./node_modules/postcss-import/README.md
+./node_modules/postcss-js/README.md
+./node_modules/postcss-load-config/node_modules/lilconfig/readme.md
+./node_modules/postcss-load-config/README.md
+./node_modules/postcss-nested/README.md
+./node_modules/postcss-selector-parser/API.md
+./node_modules/postcss-selector-parser/CHANGELOG.md
+./node_modules/postcss-selector-parser/README.md
+./node_modules/postcss-value-parser/README.md
+./node_modules/prelude-ls/CHANGELOG.md
+./node_modules/prelude-ls/README.md
+./node_modules/proxy-from-env/README.md
+./node_modules/punycode/README.md
+./node_modules/queue-microtask/README.md
+./node_modules/react/README.md
+./node_modules/react-day-picker/README.md
+./node_modules/react-dom/README.md
+./node_modules/react-easy-crop/README.md
+./node_modules/react-refresh/README.md
+./node_modules/react-router/CHANGELOG.md
+./node_modules/react-router/LICENSE.md
+./node_modules/react-router/README.md
+./node_modules/react-router-dom/LICENSE.md
+./node_modules/react-router-dom/README.md
+./node_modules/read-cache/README.md
+./node_modules/readdirp/node_modules/picomatch/CHANGELOG.md
+./node_modules/readdirp/node_modules/picomatch/README.md
+./node_modules/readdirp/README.md
+./node_modules/resolve/SECURITY.md
+./node_modules/resolve-from/readme.md
+./node_modules/reusify/README.md
+./node_modules/reusify/SECURITY.md
+./node_modules/rollup/LICENSE.md
+./node_modules/rollup/README.md
+./node_modules/run-parallel/README.md
+./node_modules/scheduler/README.md
+./node_modules/semver/README.md
+./node_modules/set-cookie-parser/README.md
+./node_modules/shebang-command/readme.md
+./node_modules/shebang-regex/readme.md
+./node_modules/signal-exit/README.md
+./node_modules/source-map-js/README.md
+./node_modules/string-width/readme.md
+./node_modules/string-width-cjs/node_modules/ansi-regex/readme.md
+./node_modules/string-width-cjs/node_modules/emoji-regex/README.md
+./node_modules/string-width-cjs/node_modules/strip-ansi/readme.md
+./node_modules/string-width-cjs/readme.md
+./node_modules/strip-ansi/readme.md
+./node_modules/strip-ansi-cjs/node_modules/ansi-regex/readme.md
+./node_modules/strip-ansi-cjs/readme.md
+./node_modules/strip-json-comments/readme.md
+./node_modules/sucrase/README.md
+./node_modules/supports-color/readme.md
+./node_modules/supports-preserve-symlinks-flag/CHANGELOG.md
+./node_modules/supports-preserve-symlinks-flag/README.md
+./node_modules/tailwindcss/CHANGELOG.md
+./node_modules/tailwindcss/lib/postcss-plugins/nesting/README.md
+./node_modules/tailwindcss/lib/value-parser/README.md
+./node_modules/tailwindcss/README.md
+./node_modules/tailwindcss/src/postcss-plugins/nesting/README.md
+./node_modules/tailwindcss/src/value-parser/README.md
+./node_modules/thenify/History.md
+./node_modules/thenify/README.md
+./node_modules/thenify-all/History.md
+./node_modules/thenify-all/README.md
+./node_modules/tinyglobby/README.md
+./node_modules/to-regex-range/README.md
+./node_modules/ts-interface-checker/README.md
+./node_modules/tslib/README.md
+./node_modules/tslib/SECURITY.md
+./node_modules/type-check/README.md
+./node_modules/typescript/README.md
+./node_modules/typescript/SECURITY.md
+./node_modules/update-browserslist-db/README.md
+./node_modules/uri-js/README.md
+./node_modules/util-deprecate/History.md
+./node_modules/util-deprecate/README.md
+./node_modules/vite/LICENSE.md
+./node_modules/vite/README.md
+./node_modules/which/CHANGELOG.md
+./node_modules/which/README.md
+./node_modules/word-wrap/README.md
+./node_modules/wrap-ansi/node_modules/ansi-styles/readme.md
+./node_modules/wrap-ansi/readme.md
+./node_modules/wrap-ansi-cjs/node_modules/ansi-regex/readme.md
+./node_modules/wrap-ansi-cjs/node_modules/emoji-regex/README.md
+./node_modules/wrap-ansi-cjs/node_modules/string-width/readme.md
+./node_modules/wrap-ansi-cjs/node_modules/strip-ansi/readme.md
+./node_modules/wrap-ansi-cjs/readme.md
+./node_modules/yallist/README.md
+./node_modules/yaml/README.md
+./node_modules/yocto-queue/readme.md
+./README.md
+
+----- CONFIGURATION (package.json résumé) -----
+"name": "oqq_frontend",
+"version": "0.0.0",
+"dependencies": {
+"devDependencies": {
+
+----- FICHIERS DE CONFIG CRITIQUES -----
+package.json
+package-lock.json
+postcss.config.js
+tailwind.config.ts
+tsconfig.json
+tsconfig.node.json
+vite.config.ts
+
+----- Aperçu de tailwind.config.ts (10 premières lignes) -----
+// tailwind.config.ts
+import type { Config } from 'tailwindcss'
+
+const config: Config = {
+  content: [
+    './index.html',
+    './src/**/*.{js,ts,jsx,tsx}',
+  ],
+  theme: {
+    extend: {},
+
+----- Aperçu de vite.config.ts (10 premières lignes) -----
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+export default defineConfig({
+  plugins: [react()],
+  resolve: {
+    alias: {
+      '@': '/src', // <-- Pour Windows et Mac, ce chemin fonctionne dans 99% des cas.
+    },
+  },
+
+----- Aperçu de tsconfig.json (10 premières lignes) -----
+{
+  "compilerOptions": {
+    // Cible la version ECMAScript générée (ES2022 = moderne, OK pour Vite)
+    "target": "ES2022",
+
+    // Bibliothèques d’API à inclure (DOM = web, ES2022 = objets JS récents)
+    "lib": ["DOM", "DOM.Iterable", "ES2022"],
+
+    // Module output (ESNext = modules modernes, adapté à Vite/React)
+    "module": "ESNext",
+
+----- Aperçu de postcss.config.js (10 premières lignes) -----
+// postcss.config.js
+export default {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+}
+
+----- INFOS TAILWIND (VERSION) -----
+(tailwindcss CLI non trouvée)
+
+----- ARBORESCENCE COMPLÈTE DE src/ -----
+src
+|-- App.tsx
+|-- assets
+|   |-- images
+|   `-- react.svg
+|-- components
+|   |-- activities
+|   |   |-- ActivityForm.tsx
+|   |   |-- ImageCropperA4.tsx
+|   |   `-- cropUtilsA4.ts
+|   |-- atoms
+|   |   |-- Button.tsx
+|   |   |-- Icon.tsx
+|   |   `-- IconButton.tsx
+|   |-- carousel
+|   |   `-- Carousel.tsx
+|   |-- layout
+|   |   |-- CategoryNav.tsx
+|   |   |-- Container.tsx
+|   |   |-- Footer.tsx
+|   |   |-- Header.tsx
+|   |   |-- Layout.tsx
+|   |   `-- MobileMenu.tsx
+|   |-- molecules
+|   |   |-- ProductCard.tsx
+|   |   |-- SearchBox.tsx
+|   |   |-- SearchFilters.tsx
+|   |   `-- filters
+|   |       |-- FilterWhatPanel.tsx
+|   |       |-- FilterWhenPanel.tsx
+|   |       `-- FilterWherePanel.tsx
+|   `-- ui
+|-- config
+|   `-- api.ts
+|-- main.tsx
+|-- pages
+|   |-- About
+|   |   `-- index.tsx
+|   |-- Activity
+|   |   `-- index.tsx
+|   |-- DeposerActivite.tsx
+|   |-- Home
+|   |   `-- index.tsx
+|   |-- Product
+|   |   `-- index.tsx
+|   |-- Search
+|   |   `-- index.tsx
+|   `-- confidentialite
+|       `-- index.tsx
+|-- services
+|   `-- api.js
+|-- styles
+|   `-- index.css
+|-- types
+|   |-- index.ts
+|   |-- search.ts
+|   `-- vite-env.d.ts
+`-- utils
+    |-- categories.ts
+    `-- index.ts
+
+22 directories, 37 files
+
+----- RÉSUMÉ DES ROUTES/PAGES (React Router) -----
+src/App.tsx --> <Route path="/deposer" element={<DeposerActivite />} />
+src/App.tsx:          <Route path="/activity/ --> id" element={<ActivityDetail />} />
+src/App.tsx --> <Route path="/confidentialite" element={<PolitiqueConfidentialite />} />
+
+----- LISTE .tsx, .ts, .css, .json, images (src/) -----
+src/App.tsx
+src/assets/react.svg
+src/components/activities/ActivityForm.tsx
+src/components/activities/cropUtilsA4.ts
+src/components/activities/ImageCropperA4.tsx
+src/components/atoms/Button.tsx
+src/components/atoms/Icon.tsx
+src/components/atoms/IconButton.tsx
+src/components/carousel/Carousel.tsx
+src/components/layout/CategoryNav.tsx
+src/components/layout/Container.tsx
+src/components/layout/Footer.tsx
+src/components/layout/Header.tsx
+src/components/layout/Layout.tsx
+src/components/layout/MobileMenu.tsx
+src/components/molecules/filters/FilterWhatPanel.tsx
+src/components/molecules/filters/FilterWhenPanel.tsx
+src/components/molecules/filters/FilterWherePanel.tsx
+src/components/molecules/ProductCard.tsx
+src/components/molecules/SearchBox.tsx
+src/components/molecules/SearchFilters.tsx
+src/config/api.ts
+src/main.tsx
+src/pages/About/index.tsx
+src/pages/Activity/index.tsx
+src/pages/confidentialite/index.tsx
+src/pages/DeposerActivite.tsx
+src/pages/Home/index.tsx
+src/pages/Product/index.tsx
+src/pages/Search/index.tsx
+src/styles/index.css
+src/types/index.ts
+src/types/search.ts
+src/types/vite-env.d.ts
+src/utils/categories.ts
+src/utils/index.ts
+
+----- TOUS LES IMPORTS/EXPORTS (src/) -----
+src/App.tsx:export default function App() {
+src/App.tsx:import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
+src/App.tsx:import ActivityDetail from '@/pages/Activity'
+src/App.tsx:import DeposerActivite from '@/pages/DeposerActivite'
+src/App.tsx:import Footer from '@/components/layout/Footer'
+src/App.tsx:import Header from '@/components/layout/Header'
+src/App.tsx:import Home from '@/pages/Home'
+src/App.tsx:import PolitiqueConfidentialite from '@/pages/confidentialite'
+src/App.tsx:import React, { useState } from 'react'
+src/components/activities/ActivityForm.tsx:export default function ActivityForm() {
+src/components/activities/ActivityForm.tsx:import { CATEGORIES } from '@/utils/categories'
+src/components/activities/ActivityForm.tsx:import { FilterWhatPanel } from '@/components/molecules/filters/FilterWhatPanel'
+src/components/activities/ActivityForm.tsx:import { FilterWhenPanel } from '@/components/molecules/filters/FilterWhenPanel'
+src/components/activities/ActivityForm.tsx:import { FilterWherePanel } from "@/components/molecules/filters/FilterWherePanel";
+src/components/activities/ActivityForm.tsx:import { MapPinIcon, CalendarIcon, KeyIcon } from '@heroicons/react/24/solid'
+src/components/activities/ActivityForm.tsx:import { useNavigate, useLocation } from "react-router-dom";
+src/components/activities/ActivityForm.tsx:import IconButton from '@/components/atoms/IconButton'
+src/components/activities/ActivityForm.tsx:import ImageCropperA4 from './ImageCropperA4'
+src/components/activities/ActivityForm.tsx:import React, { useState, DragEvent, FormEvent, useEffect } from "react";
+src/components/activities/cropUtilsA4.ts:export default async function getCroppedImg(imageSrc: string, crop: any): Promise<string | null> {
+src/components/activities/ImageCropperA4.tsx:export default ImageCropperA4
+src/components/activities/ImageCropperA4.tsx:import Cropper from 'react-easy-crop'
+src/components/activities/ImageCropperA4.tsx:import getCroppedImg from './cropUtilsA4' // utilitaire pour générer le crop (ajouté juste après)
+src/components/activities/ImageCropperA4.tsx:import React, { useState, useCallback } from 'react'
+src/components/atoms/Button.tsx:export default Button
+src/components/atoms/Button.tsx:import React from 'react'
+src/components/atoms/Icon.tsx:export default Icon
+src/components/atoms/Icon.tsx:import React from 'react'
+src/components/atoms/IconButton.tsx:export default IconButton
+src/components/atoms/IconButton.tsx:import { ReactNode } from 'react'
+src/components/carousel/Carousel.tsx:export default function Carousel<T>({
+src/components/carousel/Carousel.tsx:import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
+src/components/carousel/Carousel.tsx:import React, { useRef } from "react";
+src/components/layout/CategoryNav.tsx:export function CategoryNav({ onSelect, selected, mode = 'horizontal' }: CategoryNavProps) {
+src/components/layout/CategoryNav.tsx:import { CATEGORIES } from '@/utils/categories'
+src/components/layout/CategoryNav.tsx:import React, { useState } from 'react'
+src/components/layout/Container.tsx:export default Container
+src/components/layout/Container.tsx:import React from 'react'
+src/components/layout/Footer.tsx:export default Footer;
+src/components/layout/Footer.tsx:import React from 'react';
+src/components/layout/Header.tsx:export default Header
+src/components/layout/Header.tsx:import {
+src/components/layout/Header.tsx:import { CategoryNav } from '@/components/layout/CategoryNav'
+src/components/layout/Header.tsx:import { Link } from 'react-router-dom'
+src/components/layout/Header.tsx:import { SearchFilters } from '@/components/molecules/SearchFilters'
+src/components/layout/Header.tsx:import { useState } from 'react'
+src/components/layout/Header.tsx:import MobileMenu from '@/components/layout/MobileMenu'
+src/components/layout/Layout.tsx:export default Layout
+src/components/layout/Layout.tsx:import React from 'react'
+src/components/layout/MobileMenu.tsx:export default MobileMenu
+src/components/layout/MobileMenu.tsx:import {
+src/components/layout/MobileMenu.tsx:import { CategoryNav } from '@/components/layout/CategoryNav'
+src/components/layout/MobileMenu.tsx:import { Link } from 'react-router-dom'
+src/components/layout/MobileMenu.tsx:import React from 'react'
+src/components/molecules/filters/FilterWhatPanel.tsx:export function FilterWhatPanel({ value, onChange, onClose }: FilterWhatPanelProps) {
+src/components/molecules/filters/FilterWhatPanel.tsx:import React, { useState, useRef, useEffect } from 'react'
+src/components/molecules/filters/FilterWhenPanel.tsx:export function FilterWhenPanel({ value, onChange, onClose }: FilterWhenPanelProps) {
+src/components/molecules/filters/FilterWhenPanel.tsx:import { DayPicker, DateRange } from 'react-day-picker'
+src/components/molecules/filters/FilterWhenPanel.tsx:import { fr } from 'date-fns/locale'
+src/components/molecules/filters/FilterWhenPanel.tsx:import React, { useState } from 'react'
+src/components/molecules/filters/FilterWhenPanel.tsx:import 'react-day-picker/dist/style.css'
+src/components/molecules/filters/FilterWherePanel.tsx:export function FilterWherePanel({ value, onChange, onClose, hideDistance = false }: FilterWherePanelProps) {
+src/components/molecules/filters/FilterWherePanel.tsx:import React, { useState } from 'react'
+src/components/molecules/ProductCard.tsx:export default ProductCard
+src/components/molecules/ProductCard.tsx:import { Link } from 'react-router-dom'
+src/components/molecules/ProductCard.tsx:import React, { useState } from 'react'
+src/components/molecules/SearchBox.tsx:export default SearchBox
+src/components/molecules/SearchBox.tsx:import React, { useState } from 'react'
+src/components/molecules/SearchFilters.tsx:export function SearchFilters({ value, onWhatChange }: SearchFiltersProps) {
+src/components/molecules/SearchFilters.tsx:import {
+src/components/molecules/SearchFilters.tsx:import { FilterWhatPanel } from './filters/FilterWhatPanel'
+src/components/molecules/SearchFilters.tsx:import { FilterWhenPanel } from './filters/FilterWhenPanel'
+src/components/molecules/SearchFilters.tsx:import { FilterWherePanel } from './filters/FilterWherePanel'
+src/components/molecules/SearchFilters.tsx:import { useState } from 'react'
+src/components/molecules/SearchFilters.tsx:import IconButton from '@/components/atoms/IconButton'
+src/config/api.ts:export const searchActivities = async (params: SearchParams) => {
+src/config/api.ts:export default api
+src/config/api.ts:import { SearchParams } from '@/types/search'
+src/config/api.ts:import axios, { AxiosInstance, AxiosError } from 'axios'
+src/main.tsx:import '@/styles/index.css'
+src/main.tsx:import { StrictMode } from 'react'
+src/main.tsx:import App from '@/App'
+src/main.tsx:import ReactDOM from 'react-dom/client'
+src/pages/Activity/index.tsx:export default function ActivityDetail() {
+src/pages/Activity/index.tsx:import { useParams, useNavigate } from "react-router-dom";
+src/pages/Activity/index.tsx:import Layout from '@/components/layout/Layout' // Optionnel, recommandé pour cohérence UI
+src/pages/Activity/index.tsx:import React, { useEffect, useState } from "react";
+src/pages/confidentialite/index.tsx:export default function PolitiqueConfidentialite() {
+src/pages/confidentialite/index.tsx:import Layout from "@/components/layout/Layout";
+src/pages/confidentialite/index.tsx:import React from "react";
+src/pages/DeposerActivite.tsx:export default DeposerActivite;
+src/pages/DeposerActivite.tsx:import ActivityForm from "@/components/activities/ActivityForm";
+src/pages/DeposerActivite.tsx:import React from "react";
+src/pages/Home/index.tsx:export default HomePage
+src/pages/Home/index.tsx:import Button from '@/components/atoms/Button'
+src/pages/Home/index.tsx:import Carousel from '@/components/carousel/Carousel'
+src/pages/Home/index.tsx:import Icon from '@/components/atoms/Icon'
+src/pages/Home/index.tsx:import Layout from '@/components/layout/Layout'
+src/pages/Home/index.tsx:import ProductCard from '@/components/molecules/ProductCard'
+src/pages/Home/index.tsx:import React, { useState, useEffect } from 'react'
+src/pages/Home/index.tsx:import SearchBox from '@/components/molecules/SearchBox'
+src/types/index.ts:export interface Activity {
+src/types/index.ts:export interface ButtonProps {
+src/types/index.ts:export interface HeaderProps {
+src/types/index.ts:export interface IconProps {
+src/types/index.ts:export interface InputProps {
+src/types/index.ts:export interface MobileMenuProps {
+src/types/index.ts:export interface ProductCardProps {
+src/types/index.ts:export interface SearchBoxProps {
+src/types/index.ts:import React from 'react'
+src/types/search.ts:export interface SearchParams {
+src/types/vite-env.d.ts:  export default content;
+src/types/vite-env.d.ts:  export default content;
+src/types/vite-env.d.ts:  export default ReactComponent;
+src/types/vite-env.d.ts:  import React = require('react');
+src/utils/categories.ts:export const CATEGORIES = [
+src/utils/index.ts:export function capitalize(str: string): string {
+src/utils/index.ts:export function formatDateFR(dateStr: string): string {
+src/utils/index.ts:export function slugify(text: string): string {
+
+----- COMPONENTS/CONTEXT/HOOKS EXPORTÉS -----
+src/App.tsx:export default function App() {
+src/components/activities/ActivityForm.tsx:export default function ActivityForm() {
+src/components/carousel/Carousel.tsx:export default function Carousel<T>({
+src/components/layout/CategoryNav.tsx:export function CategoryNav({ onSelect, selected, mode = 'horizontal' }: CategoryNavProps) {
+src/components/molecules/filters/FilterWhatPanel.tsx:export function FilterWhatPanel({ value, onChange, onClose }: FilterWhatPanelProps) {
+src/components/molecules/filters/FilterWhenPanel.tsx:export function FilterWhenPanel({ value, onChange, onClose }: FilterWhenPanelProps) {
+src/components/molecules/filters/FilterWherePanel.tsx:export function FilterWherePanel({ value, onChange, onClose, hideDistance = false }: FilterWherePanelProps) {
+src/components/molecules/SearchFilters.tsx:export function SearchFilters({ value, onWhatChange }: SearchFiltersProps) {
+src/pages/Activity/index.tsx:export default function ActivityDetail() {
+src/pages/confidentialite/index.tsx:export default function PolitiqueConfidentialite() {
+
+----- FICHIERS index.ts OU index.tsx (barrel exports) -----
+src/pages/About/index.tsx
+src/pages/Activity/index.tsx
+src/pages/confidentialite/index.tsx
+src/pages/Home/index.tsx
+src/pages/Product/index.tsx
+src/pages/Search/index.tsx
+src/types/index.ts
+src/utils/index.ts
+
+----- ASSETS DANS src/ -----
+src/assets/react.svg
+
+----- CSS NON IMPORTÉS (src/) -----
+
+----- FICHIERS ORPHELINS (non importés nulle part) -----
+src/types/vite-env.d.ts
+
+----- TODO/ALERTES DÉTECTÉES DANS LE CODE -----
+
+----- NOTES SESSION (à remplir si besoin) -----
+(Laisse ici tes remarques, instructions, ou questions pour la prochaine session ChatGPT)
+
+=== FIN DU RAPPORT ===

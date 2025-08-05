@@ -1,79 +1,67 @@
-// =========================================================================
-// App.tsx — Point d’entrée principal de oùquandquoi.fr (test header + carte)
-// =========================================================================
+// src/App.tsx
+// Point d'entrée et routage principal de l'application oùquandquoi.fr
 
-import React from 'react'
-import { Header } from '@/components/layout/Header'
-
-interface ActivityProps {
-  title: string
-  location: string
-  date: string
-  price?: number
-  isAccessible: boolean
-}
+import React, { useState } from 'react'
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
+import Header from '@/components/layout/Header'
+import Footer from '@/components/layout/Footer'
+import DeposerActivite from '@/pages/DeposerActivite'
+import Home from '@/pages/Home'
+import PolitiqueConfidentialite from '@/pages/confidentialite'
+import ActivityDetail from '@/pages/Activity'
 
 /**
- * Carte d'activité (exemple de contenu)
+ * Tableau des routes où le Header/Footer doivent être cachés
  */
-const ActivityCard: React.FC<ActivityProps> = ({
-  title,
-  location,
-  date,
-  price,
-  isAccessible
-}) => {
-  return (
-    <article
-      className="p-4 border rounded-lg shadow-md bg-white max-w-md mx-auto"
-      role="article"
-      aria-labelledby={`activity-${title.replace(/\s+/g, '-').toLowerCase()}`}
-    >
-      <h2
-        id={`activity-${title.replace(/\s+/g, '-').toLowerCase()}`}
-        className="text-xl font-bold mb-2"
-      >
-        {title}
-      </h2>
-      <p className="text-gray-600">{location}</p>
-      <p className="text-sm text-gray-500">{date}</p>
-      {price !== undefined && (
-        <p className="text-lg font-semibold text-green-600 mt-1">
-          {price > 0 ? `${price} €` : 'Gratuit'}
-        </p>
-      )}
-      {isAccessible && (
-        <span
-          className="inline-block bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs mt-2"
-          aria-label="Activité accessible PMR"
-        >
-          ♿ Accessible
-        </span>
-      )}
-    </article>
-  )
-}
+const headerFooterExclusions = ['/deposer']
 
-/**
- * App principale : header + contenu simulé
- */
-const App: React.FC = () => {
-  return (
-    <div className="min-h-screen bg-gray-50">
-      <Header />
+const AppRoutes: React.FC = () => {
+  const location = useLocation()
+  const hideHeaderFooter = headerFooterExclusions.includes(location.pathname)
 
-      <main className="container mx-auto px-4 py-8">
-        {/* Composant temporaire pour test de rendu */}
-        <ActivityCard
-          title="Concert de Jazz"
-          location="Paris, France"
-          date="15 août 2025"
-          price={25}
-          isAccessible={true}
+  // ⬇️ Gestion centralisée du toggle favoris
+  const [favoritesActive, setFavoritesActive] = useState(false)
+  const handleToggleFavorites = () => setFavoritesActive(prev => !prev)
+
+  return (
+    <div className="min-h-screen flex flex-col bg-gray-50">
+      {/* Header sur toutes les pages sauf exclusions */}
+      {!hideHeaderFooter &&
+        <Header
+          favoritesActive={favoritesActive}
+          onToggleFavorites={handleToggleFavorites}
         />
+      }
+
+      {/* Main pour le contenu */}
+      <main className="flex-1">
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <Home
+                favoritesActive={favoritesActive}
+                onToggleFavorites={handleToggleFavorites}
+              />
+            }
+          />
+          <Route path="/deposer" element={<DeposerActivite />} />
+          <Route path="/activity/:id" element={<ActivityDetail />} />
+          <Route path="/confidentialite" element={<PolitiqueConfidentialite />} />
+          {/* Ajoute d'autres routes ici */}
+        </Routes>
       </main>
+
+      {/* Footer sur toutes les pages sauf exclusions */}
+      {!hideHeaderFooter && <Footer />}
     </div>
   )
 }
 
-export default App
+export default function App() {
+  return (
+    <Router>
+      <AppRoutes />
+    </Router>
+  )
+}

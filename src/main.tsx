@@ -1,13 +1,16 @@
-import React from 'react'
+// src/main.tsx
 import ReactDOM from 'react-dom/client'
-import App from './App'
-import './styles/index.css'
+// On importe StrictMode directement
+import { StrictMode } from 'react'
+import App from '@/App'
+import '@/styles/index.css'
 
-// Type assertion nécessaire pour TypeScript
+// Récupère la div racine pour React
 const rootElement = document.getElementById('root') as HTMLElement
 
+// Monte l’application en mode Strict
 ReactDOM.createRoot(rootElement).render(
-  <React.StrictMode>
+  <StrictMode>
     <App />
-  </React.StrictMode>,
+  </StrictMode>,
 )

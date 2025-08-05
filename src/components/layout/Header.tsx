@@ -1,73 +1,111 @@
-// ============================================================================
-// Composant principal : Header.tsx
-// Header responsive pour oùquandquoi.fr (mobile + desktop)
-// Contient le logo, le bouton, les filtres, et la navigation utilisateur
-// ============================================================================
-
+// src/components/layout/Header.tsx
 import { useState } from 'react'
 import { SearchFilters } from '@/components/molecules/SearchFilters'
 import { CategoryNav } from '@/components/layout/CategoryNav'
+import MobileMenu from '@/components/layout/MobileMenu'
 import {
   Bars3Icon,
-  XMarkIcon,
   UserIcon,
-  HeartIcon,
   ChatBubbleOvalLeftIcon,
   MagnifyingGlassIcon
 } from '@heroicons/react/24/outline'
+import { Link } from 'react-router-dom'
 
-export function Header() {
+interface HeaderProps {
+  onNavigate?: (navId: string, href: string) => void
+  favoritesActive?: boolean
+  onToggleFavorites?: () => void
+}
+
+const Header = ({ onNavigate, favoritesActive = false, onToggleFavorites }: HeaderProps) => {
+  const [search, setSearch] = useState<{ keyword: string, category?: string, subcategory?: string }>({
+    keyword: "",
+    category: undefined,
+    subcategory: undefined
+  })
   const [menuOpen, setMenuOpen] = useState(false)
 
-  const toggleMenu = () => {
-    setMenuOpen(prev => !prev)
+  const handleCategorySelect = (category: string, subcategory?: string) => {
+    setSearch({
+      keyword: "",
+      category,
+      subcategory
+    })
+    onNavigate?.('category', `/category/${category}`)
   }
+
+  const handleWhatChange = (val: { keyword: string, category?: string, subcategory?: string }) => {
+    setSearch(val)
+  }
+
+  const toggleMenu = () => setMenuOpen(prev => !prev)
+  const closeMenu = () => setMenuOpen(false)
 
   return (
     <>
       <header className="bg-white shadow sticky top-0 z-50 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
-          
-          {/* Left side : Logo + Menu mobile */}
           <div className="flex items-center gap-4">
-            {/* Menu burger (mobile uniquement) */}
             <button
               onClick={toggleMenu}
               className="sm:hidden text-gray-600 hover:text-gray-800 focus:outline-none"
               aria-label="Menu principal"
             >
-              {menuOpen ? <XMarkIcon className="w-6 h-6" /> : <Bars3Icon className="w-6 h-6" />}
+              <Bars3Icon className="w-6 h-6" />
             </button>
-
-            {/* Logo */}
-            <span className="text-xl font-bold text-green-600 tracking-tight">
+            <Link
+              to="/"
+              onClick={() => onNavigate?.('logo', '/')}
+              className="text-xl font-bold text-green-600 tracking-tight"
+            >
               oùquandquoi
-            </span>
+            </Link>
           </div>
-
-          {/* Middle : SearchFilters (responsive) */}
           <div className="hidden md:flex flex-1 justify-center">
-            <SearchFilters />
+            <SearchFilters value={search} onWhatChange={handleWhatChange} />
           </div>
-
-          {/* Right side : Déposer activité + icônes utilisateur */}
           <div className="flex items-center gap-4">
-            {/* Bouton Déposer une activité */}
-            <button
-              type="button"
+            <Link
+              to="/deposer"
+              onClick={() => onNavigate?.('deposer', '/deposer')}
               className="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-green-600 text-white font-medium hover:bg-green-700 transition"
             >
               <span className="text-lg">＋</span>
               <span className="text-sm">Déposer une activité</span>
-            </button>
-
-            {/* Icônes utilisateur (desktop uniquement) */}
+            </Link>
             <div className="hidden lg:flex gap-4 text-gray-600">
-              <button className="hover:text-blue-600" aria-label="Mes recherches">
+              <button
+                onClick={() => onNavigate?.('search', '/search')}
+                className="hover:text-blue-600"
+                aria-label="Mes recherches"
+              >
                 <MagnifyingGlassIcon className="w-5 h-5" />
               </button>
-              <button className="hover:text-red-500" aria-label="Mes favoris">
-                <HeartIcon className="w-5 h-5" />
+              {/* Bouton Favoris */}
+              <button
+                className={`relative group focus:outline-none`}
+                aria-label={favoritesActive ? "Voir toutes les activités" : "Afficher mes favoris en premier"}
+                onClick={onToggleFavorites}
+                tabIndex={0}
+              >
+                {/* Cœur SVG jaune plein si actif, gris contour sinon */}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className={`w-6 h-6 transition-colors duration-150 ${
+                    favoritesActive ? "text-yellow-400" : "text-gray-400 group-hover:text-yellow-400"
+                  }`}
+                  fill={favoritesActive ? "currentColor" : "none"}
+                  viewBox="0 0 24 24"
+                  stroke={favoritesActive ? "currentColor" : "#a1a1aa"}
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 21C12 21 4 13.888 4 8.941A4.941 4.941 0 019 4a5.024 5.024 0 013 1.05A5.024 5.024 0 0115 4a4.941 4.941 0 015 4.941C20 13.888 12 21 12 21z"
+                    fill={favoritesActive ? "currentColor" : "none"}
+                  />
+                </svg>
               </button>
               <button className="hover:text-blue-600" aria-label="Messages">
                 <ChatBubbleOvalLeftIcon className="w-5 h-5" />
@@ -78,17 +116,30 @@ export function Header() {
             </div>
           </div>
         </div>
-
-        {/* Filtres affichés sous le header en mobile */}
-        {menuOpen && (
-          <div className="block md:hidden px-4 pb-4">
-            <SearchFilters />
+        {(search.category || search.subcategory) && (
+          <div className="flex justify-center mt-1 text-green-700 text-sm">
+            <span>
+              Dans {search.category}
+              {search.subcategory ? " / " + search.subcategory : ""}
+            </span>
           </div>
         )}
       </header>
-
-      {/* Barre de navigation par catégories */}
-      <CategoryNav />
+      <MobileMenu
+        isOpen={menuOpen}
+        onClose={closeMenu}
+        onCategorySelect={handleCategorySelect}
+        catSelection={search}
+      />
+      <div className="relative">
+        <CategoryNav
+          onSelect={handleCategorySelect}
+          selected={search}
+          mode="horizontal"
+        />
+      </div>
     </>
   )
 }
+
+export default Header
